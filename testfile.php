@@ -1,6 +1,7 @@
-bwrbhqwrebwrbNew file yo
+<?php
+/* Data serialization test */
 
-Im added to Production!
+$data = array ('apple','banana','orange');
+echo serialize ( $data );
 
-
-Im pushing this to Staging only
+?>

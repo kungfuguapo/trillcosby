@@ -32,7 +32,8 @@ $unserialized_data = unserialize ( $serialized_data );
 $length = count ( $unserialized_data);
 for ( $i = 0; $i < $length ; $i++ ) {
 
-	print $unserialized_data[$i]."\n"; 
+	print $unserialized_data[$i]."\n";
+        echo "<br>";	
 }
 
 ?>

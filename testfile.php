@@ -12,23 +12,27 @@
  * 	a:3:{i:0;s:5:"apple";i:1;s:6:"banana";i:2;s:6:"orange";}
  */
 
+#This is the opening Echo
+echo "\n###Welcome to serialized arrays!### \nBelow is an example of a PHP Array that has been serialized"."\n\n";
+
 #This sets the origina array to serialize
 $data = array ('apple','banana','orange');
 
 #this sets a variable to the ouput of the serialized array and echo's it
 $serialized_data = serialize ( $data );
-echo ( $serialized_data );
+echo ( $serialized_data )."\n\n";
 
 #this one will actuall set the variable to the output of the unserialzed array
 #and then do a for loop to print the values of the array once they
 #have been deserialized
 
+echo "\n###Below is an example of the same PHP Array now deserialized"."\n\n";
 
 $unserialized_data = unserialize ( $serialized_data );
 $length = count ( $unserialized_data);
 for ( $i = 0; $i < $length ; $i++ ) {
 
-	print $unserialized_data[$i];
+	print $unserialized_data[$i]."\n"; 
 }
 
 ?>

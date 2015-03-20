@@ -26,7 +26,7 @@ echo ( $serialized_data )."\n\n"."<br><br>";
 #and then do a for loop to print the values of the array once they
 #have been deserialized
 
-echo "\n###Below is an example of the same PHP Array now deserialized"."\n\n";
+echo "\n###Below is an example of the same PHP Array now deserialized###<br><br>"."\n\n";
 
 $unserialized_data = unserialize ( $serialized_data );
 $length = count ( $unserialized_data);

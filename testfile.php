@@ -13,14 +13,14 @@
  */
 
 #This is the opening Echo
-echo "\n###Welcome to serialized arrays!### \nBelow is an example of a PHP Array that has been serialized"."\n\n";
+echo "\n<br>###Welcome to serialized arrays!###<br><br> \nBelow is an example of a PHP Array that has been serialized<br><br>"."\n\n";
 
 #This sets the origina array to serialize
 $data = array ('apple','banana','orange');
 
 #this sets a variable to the ouput of the serialized array and echo's it
 $serialized_data = serialize ( $data );
-echo ( $serialized_data )."\n\n";
+echo ( $serialized_data )."\n\n"."<br><br>";
 
 #this one will actuall set the variable to the output of the unserialzed array
 #and then do a for loop to print the values of the array once they

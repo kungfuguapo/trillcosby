@@ -1,0 +1,14 @@
+#!/bin/bash
+
+link_test () {
+
+  url=`wp db query 'select option_value from wp_options where option_name="siteurl"\G' | sed "1 d" | cut -c15-`
+  num_of_posts=`wp db query 'select post_name from wp_posts where post_status="publish"' | sed "1 d"`
+
+  for i in $num_of_posts; do
+    if [[ `curl -sIL $url/$num_of_posts | grep -o 200` = "200" ]]; then
+      echo $num_of_posts "is checking out with a 200 OK Response boss"
+    fi
+  done
+
+}

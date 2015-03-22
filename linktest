@@ -12,3 +12,4 @@ link_test () {
   done
 
 }
+linktest ()

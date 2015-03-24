@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 /* Data serialization test
  *

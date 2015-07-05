@@ -1,0 +1,3 @@
+[submodule "gitpush/go-404"]
+	path = gitpush/go-404
+	url = git@github.com:GigaOM/go-404.git

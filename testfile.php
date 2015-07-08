@@ -13,6 +13,8 @@
 #testing new push April 1st
 ##Tresting post commit
 #One mo gain
+#
+echo "This shit be cray!";
 
 /* Data serialization test
  *
